@@ -52,6 +52,15 @@ h1 {
   margin-bottom: var(--md);
 }
 
+.bylines p,
+.bylines a:link,
+.bylines a:hover,
+.bylines a:active,
+.bylines a:visited {
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
 figcaption {
   display: none;
 }
