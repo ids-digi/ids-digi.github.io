@@ -15,14 +15,5 @@ fetch("../metadata.json")
         <a href="${reddit}" target="_blank"><i class="fab fa-reddit"></i></a>
         `;
 
-        meta_og[0].content = `https://specials.idsnews.com/${data.url}`;
-        meta_og[2].content = data.headline;
-        meta_og[3].content = data.abstract;
-        meta_og[5].content = data.dom_image;
-
-        meta_twitter[3].content = data.headline;
-        meta_twitter[4].content = data.abstract;
-        meta_twitter[5].content = data.dom_image;
-
     })
     .catch(err => console.log(err))
