@@ -120,12 +120,14 @@ const bkg = document.querySelector('.bkg-cover');
 const card = document.querySelector('#modal .candidate');
 
 window.onclick = function (event) {
+    console.log('window onclick event running');
     if (event.target === modal) {
         hideModal();
     }
 }
 
 function showModal() {
+    console.log('showModal function called');
     // reveal the modal
     modal.style.opacity = 1;
     bkg.style.opacity = 1;
