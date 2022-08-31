@@ -120,8 +120,10 @@ const bkg = document.querySelector('.bkg-cover');
 const card = document.querySelector('#modal .candidate');
 
 window.onclick = function (event) {
+    console.log('clicking on the window');
     const closer = document.querySelector('i.fa.fa-times');
     if (event.target === modal || event.target === closer) {
+        console.log('it should hide the modal now');
         hideModal();
     }
 }
