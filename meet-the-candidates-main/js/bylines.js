@@ -4,7 +4,7 @@
 const byline_types = ["By", "Photos by", "Design and development by", "Graphics by"]
 let bylines_html = '';
 let bios_html = '';
-fetch("../metadata.json")
+fetch("./metadata.json")
     .then(response => response.json())
     .then(data => {
 
