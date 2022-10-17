@@ -1,0 +1,16 @@
+{
+    "url": "monroe-county-2022-election-updates",
+    "slug": "Story slug",
+    "headline": "Monroe County 2022 Live Election Updates",
+    "title": "2022 Election Updates",
+    "pub_date": "Nov. 8, 2022",
+    "bylines": {
+        "Design and development by": {
+            "name": "Sam Shi",
+            "email": "samuel.li.shi@gmail.com",
+            "twitter": "samuelshi_",
+            "pfp": "https://s3.amazonaws.com/snwceomedia/ids/cfacbe8d-981b-4cd0-b357-16f47e85a177.sized-1000x1000.jpg",
+            "bio": "Sam is senior studying software engineering who has worked at the IDS since 2021 as a web developer."
+        }
+    }
+}
