@@ -123,22 +123,6 @@
     </noscript>
     <script src="js/googleTagManager.js"></script>
 
-    <!-- Custom grain filter for intros -->
-    <svg style="position: absolute; width: 0; height: 0; overflow: hidden">
-      <defs>
-        <filter id="grain">
-          <feTurbulence baseFrequency="0.60,0.90" result="colorNoise" />
-          <feColorMatrix
-            in="colorNoise"
-            type="matrix"
-            values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0"
-          />
-          <feComposite operator="in" in2="SourceGraphic" result="monoNoise" />
-          <feBlend in="SourceGraphic" in2="monoNoise" mode="multiply" />
-        </filter>
-      </defs>
-    </svg>
-
     <div style="overflow: hidden">
       <div class="helper"></div>
 
@@ -552,59 +536,110 @@
             <div class="hidden">Preseason rankings...</div>
           </div>
           <div class="container">
-            <div class="mens">
-              <div>
-                <h3>Men's Team:</h3>
-                <p>Preseason ranking No. 13 (AP Poll)</p>
+            <div class="card">
+              <div class="image">
+                <img
+                  src="https://snworksceo.imgix.net/ids/543d1707-eb14-4623-a033-eb2239c15ff7.sized-1000x1000.jpg?w=1000"
+                />
+              </div>
 
-                <h3>Trayce Jackson Davis</h3>
-                <ul>
-                  <li>
-                    Blue Ribbon College Basketball Yearbook Preseason
-                    All-American
-                  </li>
-                  <li>College Hoops Today Preseason All-American</li>
-                  <li>The Almanac Preseason All-American</li>
-                  <li>Big Ten Preseason Player of the Year</li>
-                  <li>Preseason All-Big Ten Team</li>
-                  <li>CBS Sports Preseason Second Team All-American</li>
-                  <li>AP Preseason All-American</li>
-                  <li>The Athletic Preseason Second Team All-American</li>
-                  <li>
-                    Karl Malone Power Forward of the Year Award Watch List
-                  </li>
-                </ul>
+              <div class="content">
+                <div class="headline">Men's Team</div>
+                <div class="excerpt">
+                  <ul>
+                    <li>Preseason ranking No. 13 (AP Poll)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="content">
+                <div class="headline">Women's Team</div>
+                <div class="excerpt">
+                  <ul>
+                    <li>Preseason ranking No. 11 (AP Poll)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="content">
+                <div class="headline">Sara Scalia</div>
+                <div class="excerpt">
+                  <ul>
+                    <li>
+                      Ann Meyers Drysdale Shooting Guard of the Year Award Watch
+                      List
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="womens">
-              <div>
-                <h3>Women's Team:</h3>
-                <p>Preseason ranking No. 11 (AP Poll)</p>
 
-                <h3>Grace Berger</h3>
-                <ul>
-                  <li>Preseason All-Big Ten Team</li>
-                  <li>
-                    Cheryl Miller Small Forward of the Year Award Watch List
-                  </li>
-                </ul>
+            <div class="card">
+              <div class="image">
+                <img
+                  src="https://snworksceo.imgix.net/ids/9a2ed6c9-a01d-4a02-9e91-d1a993a9ee4b.sized-1000x1000.jpg?w=1000"
+                />
+              </div>
 
-                <h3>Mackenzie Holmes</h3>
-                <ul>
-                  <li>Preseason All-Big Ten Team</li>
-                  <li>Lisa Leslie Center of the Year Award Watch List</li>
-                </ul>
+              <div class="content">
+                <div class="headline">Grace Berger</div>
+                <div class="excerpt">
+                  <ul>
+                    <li>Preseason All-Big Ten Team</li>
+                    <li>
+                      Cheryl Miller Small Forward of the Year Award Watch List
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-                <h3>Sara Scalia</h3>
-                <ul>
-                  <li>
-                    Ann Meyers Drysdale Shooting Guard of the Year Award Watch
-                    List
-                  </li>
-                </ul>
+              <div class="image">
+                <img
+                  src="https://snworksceo.imgix.net/ids/20055799-0ac1-4fa3-8990-6eae558c439e.sized-1000x1000.jpg?w=1000"
+                />
+              </div>
+
+              <div class="content">
+                <div class="headline">Mackenzie Holmes</div>
+                <div class="excerpt">
+                  <ul>
+                    <li>Preseason All-Big Ten Team</li>
+                    <li>Lisa Leslie Center of the Year Award Watch List</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img
+                  src="https://snworksceo.imgix.net/ids/917f6386-dd7f-41bc-9b0d-47456425182c.sized-1000x1000.jpg?w=1000"
+                />
+              </div>
+
+              <div class="content">
+                <div class="headline">Trayce Jackson-Davis</div>
+                <div class="excerpt">
+                  <ul>
+                    <li>
+                      Blue Ribbon College Basketball Yearbook Preseason
+                      All-American
+                    </li>
+                    <li>College Hoops Today Preseason All-American</li>
+                    <li>The Almanac Preseason All-American</li>
+                    <li>Big Ten Preseason Player of the Year</li>
+                    <li>Preseason All-Big Ten Team</li>
+                    <li>CBS Sports Preseason Second Team All-American</li>
+                    <li>AP Preseason All-American</li>
+                    <li>The Athletic Preseason Second Team All-American</li>
+                    <li>
+                      Karl Malone Power Forward of the Year Award Watch List
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
+
           <div id="hoosier-hysteria" class="hysteria">
             <a
               href="https://www.idsnews.com/article/2022/10/iu-basketball-showcase-skill-hoosier-hysteria"
