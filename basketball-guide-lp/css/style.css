@@ -14,6 +14,7 @@
 }
 
 header {
+  height: 96vh;
   display: block;
   position: relative;
   overflow: hidden;
@@ -94,7 +95,7 @@ header {
   height: 400vh;
   width: 3000px;
   left: calc(-1500px + 50%);
-  bottom: -200%;
+  bottom: -209%;
   animation: conicRotate 360s linear infinite;
 }
 
@@ -144,10 +145,10 @@ header img:nth-of-type(2) {
 }
 
 #byline img.featured {
-  width: 530px;
+  height: 90vh;
+  max-width: 530px;
   position: absolute;
-  /* top: -685px; */
-  top: -100%;
+  top: -85vh;
   filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.7));
 }
 
@@ -221,7 +222,6 @@ header img:nth-of-type(2) {
 }
 
 #index h2 {
-  /* width: 40%; */
   color: black;
   font-family: "Passion One", sans-serif;
   font-size: 3.1em;
@@ -263,8 +263,6 @@ header img:nth-of-type(2) {
 
 #index .mens,
 #index .womens {
-  /* width: 350px; */
-
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -321,14 +319,12 @@ header img:nth-of-type(2) {
   height: 235px;
   width: 50%;
   width: auto;
-  /* min-height: 400px; */
   display: inline-block;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
   transition: all 0.2s ease;
-  /* display: flex; */
   display: block;
   justify-content: center;
   align-items: flex-end;
@@ -337,12 +333,6 @@ header img:nth-of-type(2) {
   display: flex;
   overflow: hidden;
 }
-
-/* .hero-feature:hover,
-.hero-standard:hover {
-  opacity: 0.95;
-  transform: scale(1.005);
-} */
 
 .hero-feature p,
 .hero-standard p {
@@ -360,7 +350,6 @@ header img:nth-of-type(2) {
 
 .hero-feature p {
   font-size: 2.5em;
-  /* width: 70%; */
   letter-spacing: 4px;
   margin-bottom: 0;
 }
@@ -377,8 +366,10 @@ header img:nth-of-type(2) {
   letter-spacing: 2px;
   background-image: url("../halftone.svg");
   background-repeat: repeat-y;
-  /* background-repeat: no-repeat; */
+  background-size: 200%;
   border: 5px black solid;
+  text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8), 1px 1px 2px rgba(0, 0, 0, 0.8),
+    1px -1px 0 rgba(0, 0, 0, 0.8), -1px -1px 0 rgba(0, 0, 0, 0.8);
   padding: 0.2em 0.4em;
 }
 
@@ -416,12 +407,9 @@ header img:nth-of-type(2) {
 }
 
 #mens-features .hero-feature:nth-child(1) {
-  /* background-image: url("https://snworksceo.imgix.net/ids/917f6386-dd7f-41bc-9b0d-47456425182c.sized-1000x1000.jpg?w=1500"); */
   background-image: radial-gradient(circle, yellow, orange);
   grid-column: 1 / span 2;
   grid-row: 1 / 50;
-  /* -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%); */
   position: relative;
 }
 
@@ -429,57 +417,33 @@ header img:nth-of-type(2) {
   width: 180%;
   position: absolute;
   top: 0;
-  /* right: 50%; */
   bottom: 0;
-  /* left: 50%; */
-  /* margin-left: calc(100vw - 50%); */
-  /* z-index: -1; */
 }
 
 #mens-features .hero-standard:nth-child(2) {
   background-image: url("https://snworksceo.imgix.net/ids/4d2f4bfb-c1db-4010-924e-63372a8105dd.sized-1000x1000.jpg?w=1000");
   grid-column: 1 / span 1;
   grid-row: 50 / 100;
-  /* -webkit-clip-path: polygon(0 14%, 0 86%, 90% 81%, 100% 6%);
-  clip-path: polygon(0 14%, 0 86%, 90% 81%, 100% 6%); */
-  /* margin-top: -73px; */
 }
 
 #mens-features .hero-standard:nth-child(3) {
   background-image: url("https://snworksceo.imgix.net/ids/4ba9b994-64d0-458d-8575-e71b384fc6b1.sized-1000x1000.jpg?w=1000");
   grid-column: 2 / span 1;
   grid-row: 50 / 100;
-  /* -webkit-clip-path: polygon(13% 6%, 4% 84%, 100% 100%, 100% 0%);
-  clip-path: polygon(13% 6%, 4% 84%, 100% 100%, 100% 0%); */
-  /* margin-top: -73px;
-  margin-left: -15%;
-  margin-bottom: 18px; */
 }
 
 #mens-features .hero-standard:nth-child(4) {
   background-image: url("https://snworksceo.imgix.net/ids/91eb17b0-1ff4-4ed7-aade-738614bafd5f.sized-1000x1000.jpg?w=1000");
-  /* grid-column: 1 / span 2; */
   grid-column: 1 / span 1;
 
   grid-row: 100 / 150;
-  /* -webkit-clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
-  clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%); */
-  /* -webkit-clip-path: polygon(45% 3%, 90% 0%, 100% 100%, 0 100%, 0 5%);
-  clip-path: polygon(45% 3%, 90% 0%, 100% 100%, 0 100%, 0 5%); */
-  /* margin-top: -107px; */
 }
 
 #mens-features .hero-standard:nth-child(5) {
-  /* background-image: url("https://s3.amazonaws.com/snwceomedia/ids/579dc1e1-3d24-49a3-9d9f-5b7dbb481bb9.sized-1000x1000.png"), radial-gradient(circle, lightblue, deepskyblue); */
   background-image: radial-gradient(circle, lightblue, deepskyblue);
-  /* background-size: 50%; */
   background-position-y: 100%;
   grid-column: 2 / span 1;
   grid-row: 100 / 150;
-  /* -webkit-clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 9% 100%);
-  clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 9% 100%); */
-  /* margin-top: -105px;
-  margin-left: -10%; */
   position: relative;
 }
 
@@ -490,7 +454,6 @@ header img:nth-of-type(2) {
   right: 0;
   bottom: 0;
   left: -20%;
-  /* z-index: -1; */
 }
 
 /* Womens's Features */
@@ -506,29 +469,19 @@ header img:nth-of-type(2) {
   background-image: url("https://snworksceo.imgix.net/ids/03b4e316-618a-45ad-8212-8450c31ca1f6.sized-1000x1000.jpg?w=1000");
   grid-column: 1 / span 2;
   grid-row: 1 / 50;
-  /* -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%); */
 }
 
 #womens-features .hero-standard:nth-child(2) {
   background-image: url("https://snworksceo.imgix.net/ids/54857568-f7ba-42b0-81fb-7bea2439a8d1.sized-1000x1000.jpg?w=1000");
   grid-column: 1 / span 1;
   grid-row: 50 / 100;
-  /* -webkit-clip-path: polygon(0 14%, 0 86%, 90% 81%, 100% 6%);
-  clip-path: polygon(0 14%, 0 86%, 90% 81%, 100% 6%); */
-  /* margin-top: -73px; */
 }
 
 #womens-features .hero-standard:nth-child(3) {
-  /* background-image: url("https://snworksceo.imgix.net/ids/d6b89167-d295-49f4-88d6-8b16e5c0cfb8.sized-1000x1000.jpg?w=1000"); */
   background-image: radial-gradient(circle, palegreen, yellowgreen);
   grid-column: 2 / span 1;
   grid-row: 50 / 100;
-  /* -webkit-clip-path: polygon(13% 6%, 4% 84%, 100% 100%, 100% 0%);
-  clip-path: polygon(13% 6%, 4% 84%, 100% 100%, 100% 0%); */
-  /* margin-top: -73px;
-  margin-left: -15%;
-  margin-bottom: 18px; */
+
   position: relative;
   overflow: hidden;
 }
@@ -536,25 +489,16 @@ header img:nth-of-type(2) {
 #womens-features .hero-standard:nth-child(3) img {
   position: absolute;
   top: -9%;
-  /* left: 10%; */
-  /* z-index: -1; */
 }
 
 #womens-features .hero-standard:nth-child(4) {
   background-image: url("https://snworksceo.imgix.net/ids/9e12d571-e9b9-438f-bf18-83039cb9222c.sized-1000x1000.jpg?w=1500");
-  /* grid-column: 1 / span 1; */
+
   grid-column: 1 / span 2;
   grid-row: 100 / 150;
-  /* -webkit-clip-path: polygon(45% 3%, 90% 0%, 100% 1.5%, 100% 100%, 0 100%, 0 5%); */
-  /* clip-path: polygon(45% 3%, 90% 0%, 100% 1.5%, 100% 100%, 0 100%, 0 5%); */
-  /* clip-path: polygon(45% 3%, 90% 0%, 100% 100%, 0 100%, 0 5%); */
-  /* margin-top: -107px; */
-  /* -webkit-clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
-  clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%); */
 }
 
 section.coverage {
-  /* height: calc(100vh - 57px); */
   height: 1000px;
   border: 5px solid black;
   padding: 10px;
@@ -683,11 +627,13 @@ section.coverage a:hover {
 #mens-schedule a {
   background-image: url("https://snworksceo.imgix.net/ids/db01f1d5-54ec-4908-84d4-221d88ec4c50.sized-1000x1000.jpg?w=1000");
   background-position-x: 20%;
+  background-size: 160%;
 }
 
 #mens-roundtable a {
   background-image: url("https://snworksceo.imgix.net/ids/db149673-7485-462f-acea-ec2655c5b768.sized-1000x1000.jpg?w=1000");
   background-position-x: 20%;
+  background-size: 160%;
 }
 
 /* Men's Exhibitions */
@@ -707,7 +653,7 @@ section.coverage a:hover {
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
-  /* padding-right: 3em; */
+
   border: 4px black solid;
   overflow: hidden;
 }
@@ -755,7 +701,7 @@ section.coverage a:hover {
 
 #mens-exhibitions img {
   height: 100%;
-  /* width: 33vw; */
+
   object-fit: cover;
   border-right: 4px black solid;
 }
@@ -771,7 +717,6 @@ section.coverage a:hover {
 
 /* General Content */
 #general-content .container {
-  /* height: calc(100vh - 57px); */
   border: 5px solid black;
   border-top: none;
   padding: 10px;
@@ -792,17 +737,12 @@ section.coverage a:hover {
 
 #general-content .container .mens,
 #general-content .container .womens {
-  /* width: 50%; */
   border: 4px solid black;
 }
 
 #general-content .mens div,
 #general-content .womens div {
-  /* width: 60%; */
-  /* padding: 1em; */
   padding: 3em;
-  /* padding-right: 3em; */
-  /* margin-left: 40%; */
 }
 
 #general-content li {
@@ -820,7 +760,6 @@ section.coverage a:hover {
 #general-content .mens img,
 #general-content .womens img {
   width: 243px;
-  /* object-fit: cover; */
   filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.7));
   position: absolute;
 }
@@ -841,13 +780,8 @@ section.coverage a:hover {
   );
 }
 
-#general-content .mens img {
-  /* object-position: 55%; */
-}
-
 #general-content .womens img {
   width: 329px;
-  /* object-fit: contain; */
 }
 
 /* Hoosier Hysteria */
@@ -858,7 +792,6 @@ section.coverage a:hover {
   margin: 0 auto;
   margin-top: 10px;
   border: 5px black solid;
-  /* position: relative; */
 }
 
 #general-content .hysteria:hover {
@@ -875,27 +808,12 @@ section.coverage a:hover {
   text-align: center;
   background-color: white;
   border: 4px solid black;
-  /* position: absolute; */
+
   padding: 10px;
   margin: 0 auto;
   margin-top: 1em;
   transform: skew(-15deg);
-  /* top: 1em; */
-  /* left: 50%; */
-  /* margin-left: -25%; */
 }
-
-/* .hysteria div {
-  padding: 0.2em 0.4em;
-  border: 4px solid black;
-  position: absolute;
-  right: 0;
-  bottom: 2em;
-  left: 0;
-  margin: 0 auto;
-  display: table;
-  transform: skew(-12deg);
-} */
 
 .hysteria a {
   height: 100%;
@@ -935,7 +853,7 @@ media queries helper
 */
 .helper {
   /* comment out next line to get visual help with media queries while you code */
-  /* display: none !important; */
+  display: none !important;
 
   width: 60px;
   height: 60px;
@@ -986,6 +904,8 @@ No media query for `xs` since this is the default */
   }
 
   #byline img.featured {
+    height: unset;
+    max-width: unset;
     width: 530px;
     top: -685px;
   }
@@ -1118,7 +1038,6 @@ No media query for `xs` since this is the default */
     height: unset;
     margin: unset;
     border: unset !important;
-    /* display: unset; */
   }
 
   .hero-feature:hover,
@@ -1149,7 +1068,8 @@ No media query for `xs` since this is the default */
   #mens-features .heading,
   #mens-exhibitions .heading,
   #general-content .heading {
-    font-size: 3.3em;
+    font-size: 3.7em;
+    background-size: 180%;
   }
 
   #womens-features .hero-standard:nth-child(3) img {
@@ -1166,11 +1086,9 @@ No media query for `xs` since this is the default */
     left: -10%;
   }
 
-  #general-content .hysteria {
-    /* width: unset; */
-    /* width: 100%; */
-    /* max-width: unset; */
-    /* margin: 10px; */
+  #mens-schedule a,
+  #mens-roundtable a {
+    background-size: cover;
   }
 
   section.coverage {
@@ -1235,11 +1153,6 @@ No media query for `xs` since this is the default */
     font-size: 8em;
   }
 
-  /* #index h2 {
-    width: unset;
-    font-size: 4.5em;
-  } */
-
   #index .container {
     flex-direction: column;
     align-self: center;
@@ -1265,7 +1178,8 @@ No media query for `xs` since this is the default */
   #mens-features .heading,
   #mens-exhibitions .heading,
   #general-content .heading {
-    font-size: 3.3em;
+    font-size: 4em;
+    background-size: 125%;
   }
 
   #womens-features .hero-standard:nth-child(3) img {
@@ -1280,7 +1194,6 @@ No media query for `xs` since this is the default */
   #mens-features .hero-standard:nth-child(5) img {
     width: 150%;
     left: -10%;
-    /* top: unset; */
   }
 
   .helper {
@@ -1329,8 +1242,6 @@ No media query for `xs` since this is the default */
   }
 
   #index h2 {
-    /* width: 40%; */
-    /* min-width: 40%; */
     font-size: 5em;
   }
 
@@ -1344,6 +1255,7 @@ No media query for `xs` since this is the default */
   #mens-exhibitions .heading,
   #general-content .heading {
     font-size: 4em;
+    background-size: 100%;
   }
 
   .hero-feature p,
@@ -1359,17 +1271,15 @@ No media query for `xs` since this is the default */
   #womens-features .hero-standard:nth-child(3) img {
     width: unset;
     left: -375px;
-    /* right: -450px; */
   }
 
   #mens-features .hero-feature:nth-child(1) img {
     width: unset;
-    /* left: unset; */
   }
 
   #mens-features .hero-standard:nth-child(5) img {
     width: 100%;
-    /* bottom: -50%; */
+
     top: 18%;
     left: 0;
   }
@@ -1404,7 +1314,6 @@ No media query for `xs` since this is the default */
   #womens-features .hero-standard:nth-child(3) img {
     width: unset;
     left: unset;
-    /* right: -450px; */
   }
 
   .intro h3 {
