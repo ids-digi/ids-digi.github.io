@@ -846,10 +846,10 @@ function initSectBreaks() {
   });
 
   animateSectionBreak();
-  window.addEventListener("scroll", checkScroll);
+  window.addEventListener("scroll", checkScrollAlt);
 }
 
-function checkScroll() {
+function checkScrollAlt() {
   // Section Divider animation
   let windowHeight = window.innerHeight;
   const sectionBreaks = document.querySelectorAll(".section-break");
@@ -910,9 +910,12 @@ function checkScroll() {
 
   // Show/hide nav
   const scrollContainer = document.querySelector(".scroll-container");
+  const nav = document.querySelector("nav");
 
-  if (scrollContainer.getBoundingClientRect().top <= 0) {
-    const nav = document.querySelector("nav");
+  if (
+    scrollContainer.getBoundingClientRect().top <= 0 &&
+    scrollContainer.getBoundingClientRect().bottom >= nav.clientHeight
+  ) {
     nav.style.backgroundColor = "transparent";
     slug.style.display = "none";
   }
