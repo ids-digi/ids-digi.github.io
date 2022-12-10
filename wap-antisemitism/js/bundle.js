@@ -1,4 +1,4 @@
-/*! Last updated December 5, 2022 - https://specials.idsnews.com/wap-antisemitism */
+/*! Last updated December 10, 2022 - https://specials.idsnews.com/wap-antisemitism */
 // replace <div class="ad"></div> with proper ad code
 let adDivs = document.querySelectorAll(".ad");
 let adCount = 2;
@@ -207,7 +207,9 @@ function handleVideoTime(currentVideoTime, event) {
   const prevSpeaker = speakingCard.querySelector(".name").innerHTML;
 
   if (prevSpeaker !== currentSpeaker.name) {
-    speakingCard.style.width = currentSpeaker.cardWidth;
+    if (window.innerWidth >= 992) {
+      speakingCard.style.width = currentSpeaker.cardWidth;
+    }
     speakingCard.querySelector(".name").innerHTML = currentSpeaker.name;
     speakingCard.querySelector("img").alt = currentSpeaker.name;
     speakingCard.querySelector("img").src = currentSpeaker.picture;
@@ -846,10 +848,10 @@ function initSectBreaks() {
   });
 
   animateSectionBreak();
-  window.addEventListener("scroll", checkScrollAlt);
+  window.addEventListener("scroll", onScroll);
 }
 
-function checkScrollAlt() {
+function onScroll() {
   // Section Divider animation
   let windowHeight = window.innerHeight;
   const sectionBreaks = document.querySelectorAll(".section-break");
