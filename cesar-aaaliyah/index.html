@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/url" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Headline" /> <!-- TODO: headline -->
+    <meta property="og:description"
+        content="Cesar, an immigrant with temporary status, faces uncertainty about his future and education under Trump's policies" />
+    <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Headline"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="Abstract"> <!-- TODO: abstract -->
+    <meta name="twitter:image" content=""> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <!-- <div class="helper"></div> -->
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container story">
+            <!-- TODO: Move this to bottom right -->
+            <h1>Between Dreams and Doubts: </h1>
+            <h2>A Venezuelan Immigrant’s Battle for Education and Stability in a Divided America</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="caption header-caption">Caption</p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+                <p>Cesar, 18, sits in his room staring at the Ivy Tech Community College website. As an immigrant, his
+                    temporary protected status has always been a source of constant anxiety, as it doesn&rsquo;t provide
+                    permanent residency leaving him vulnerable to the threat of deportation. After the election, the
+                    stakes seemed even higher. Donald Trump is promising new policies that could impact his ability to
+                    stay in school and continue his life here in the U.S.</p>
+                <p>This website is a first step to college for many, but for him it's a reminder of losing his
+                    scholarship to Indiana University. Instead, he found himself here, navigating a different path.</p>
+                <p>He stared at the screen, witnessing another block in his path to his education. The email from Ivy
+                    Tech states they are still in the process of reviewing his application. Cesar has called Ivy Tech
+                    several times since the end of October, and they had said to allow for seven days until his
+                    application process.</p>
+                <p>Seven days passed, and his application was still in a state of uncertainty. After the seven days
+                    passed, he called again. Then, two weeks passed.</p>
+                <p>Cesar has been here before.</p>
+
+                <p class="section-break">&mdash; &mdash; &mdash;</p>
+
+
+                <p>Cesar was 14 when he immigrated to the U.S. from Maracaibo, Venezuela in March of 2021. In 2019, a
+                    five-day national blackout caused widespread disruption and fear, leading to increased violence and
+                    looting across the country. Without a backup generator, Cesar, his mother, father and sister lived
+                    in constant fear of becoming victims of the chaos. Following the blackout, they decided that the
+                    deteriorating economy and corrupt government were enoughreasons to begin their immigration journey
+                    to the U.S.</p>
+                <figure class="med-image">
+                    <iframe title="Experts estimate 11 Million Undocumented Immigrants are living in the United States."
+                        aria-label="Map" id="datawrapper-chart-J2m6U" src="https://datawrapper.dwcdn.net/J2m6U/2/"
+                        scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;"
+                        height="583" data-external="1"></iframe>
+                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r = 0; r < e.length; r++)if (e[r].contentWindow === a.source) { var i = a.data["datawrapper-height"][t] + "px"; e[r].style.height = i } } })) }();
+
+                    </script>
+                </figure>
+                <p>Cesar&rsquo;s mother sold both of their cars, clothing and all the items that wouldn&rsquo;t fit in
+                    their suitcases. They used the money to pay a coyote to take them to Maicao, Colombia. To cross into
+                    Columbia, they had to pay a border patrol fee. Then, they took a bus to Barranquilla, Columbia as
+                    there were only direct flights to the U.S. from there. They waited three days in a hotel for their
+                    flight. They slept in a hotel eager but scared to go.</p>
+                <p>The day arrived and the flight lasted five hours from Colombia to Florida. He sat with his sister who
+                    was terrified of flights. He held her hand the entire flight while their parents sat in a different
+                    row. Cesar listened to a playlist that consisted of mostly English based artists such as Tove Lo and
+                    Adrienne Lenker.</p>
+                <p>&ldquo;The whole flight I was thinking I don&rsquo;t know how to speak English. None of us know. How
+                    are we going to survive?&rdquo; said Cesar.</p>
+                <p>They landed at Orlando International Airport. Soon after landing, an officer stopped them and took
+                    them to a room for questioning. The officer investigated Cesar&rsquo;s father due to suspicious
+                    travel activity. His father had previously traveled to the U.S. for 6 months at a time to New York.
+                    After Cesar&rsquo;s father stated that he was only visiting a friend, they checked their suitcases
+                    and found nothing except clothing and leftover remnants of their life from Venezuela. Cesar&rsquo;s
+                    family was cleared and let go. This was the moment Cesar first felt profiled.</p>
+                <p>They went to their hotel and spent the week there before going to Indiana. Many of Cesar&rsquo;s
+                    friends immigrated from Venezuela to Florida as it was the easiest state to travel to for many of
+                    his friend&rsquo;s families. The first day he was there he was able to reconnect with some friends.
+                    Later in the week his family came from Miami and visited them before their departure to Florida.</p>
+                <p>&ldquo;Orlando was so colorful and diverse it was exactly like how I imagined America. When I landed
+                    in Indiana, it was grey and dark,&rdquo; said Cesar. &ldquo;There were barely any lights it was so
+                    sad and dry.&rdquo;</p>
+                <p>The family planned to enter the U.S. as tourists for a maximum stay of six months, after which they
+                    would apply for asylum.</p>
+                <figure class="med-image">
+                    <iframe title="Post-war Policies, Acts and Cases Impacting Undocumented Immigration"
+                        aria-label="Chart" id="datawrapper-chart-n3NZE" src="https://datawrapper.dwcdn.net/n3NZE/11/"
+                        scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;"
+                        height="583" data-external="1"></iframe>
+                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r = 0; r < e.length; r++)if (e[r].contentWindow === a.source) { var i = a.data["datawrapper-height"][t] + "px"; e[r].style.height = i } } })) }();
+
+                    </script>
+                </figure>
+                <p>To be eligible, applicants must provide valid proof of fear or oppression based on race, religion,
+                    nationality, political opinion, or membership in a particular social group. They must fill out Form
+                    I-589 and submit it within one year of arriving in the U.S. An initial screening and interview with
+                    an asylum or immigration officer will determine acceptance or denial of entry. The asylum process
+                    can be lengthy, as a mass influx of immigrants and refugees often causes many applications to be
+                    delayed.</p>
+                <p>As of July 3, 2024, U.S. Citizenship and Immigration Services (USCIS) had more than 786,000
+                    affirmative asylum cases pending for more than 180 days, underscoring significant delays in the
+                    process. The backlog is attributed to USCIS's insufficient funding, staffing and planning to handle
+                    the growing number of asylum applications.</p>
+                <p>As weeks, months then years went by Cesar began to question if their application would be approved.
+                    Cesar&rsquo;s family has been awaiting their application to be approved since October 2021.</p>
+                <p>&ldquo;I always check the mail to see if there&rsquo;s a card, but I don&rsquo;t really expect
+                    anything,&rdquo; said Cesar.</p>
+                <p>Before the election, each news cycle brought fresh anxiety, and he worried about how changes in
+                    leadership could further complicate his family's situation.</p>
+
+                <p class="section-break">&mdash; &mdash; &mdash;</p>
+
+                <p>Cesar stated that the election made him and his family nervous about their immigration status. He saw
+                    that Donald Trump and his campaign had amplified false claims about Venezuelan immigrants in Aurora,
+                    Colorado fueling stereotypes about migrants. He recently made unfounded accusations of Venezuelan
+                    gangs taking over an apartment building in Aurora, Colorado.</p>
+                <p>Immigration has been a central focus of Trump&rsquo;s campaign, appearing at nearly every convention.
+                </p>
+                <p>Last September, he stated, &ldquo;Following the Eisenhower Model, we will carry out the largest
+                    domestic deportation operation in American history.&rdquo;</p>
+                <p>Trump claims that cities are becoming overrun by immigrants and that his mass deportation initiative
+                    will begin with &ldquo;Operation Aurora,&rdquo; targeting gang-affiliated immigrants in Aurora.</p>
+                <p>Trump plans to continue building the border wall and increase funding for border patrol. The asylum
+                    process may become more restrictive, with new eligibility requirements and expedited deportations,
+                    prioritizing American workers over immigration rights.</p>
+                <p>Trump has selected South Dakota Gov. Kristi Noem to lead the Department of Homeland Security. If
+                    confirmed, she would oversee Immigration and Customs Enforcement, among other agencies. Noem has
+                    echoed Trump&rsquo;s talk on immigration and has been involved in rigourous immigration operations.
+                    Noem previously supported Texas&rsquo; Operation Lone Star, a response to a rise in illegal
+                    immigration in Texas, by donating $1 million and deploying South Dakota National Guard troops to the
+                    U.S.-Mexico border.</p>
+                <p>In a post on X earlier this year Noem said, &ldquo;Biden's open border policies are facilitating
+                    illegal border crossings. This invasion must end. The federal government has to stop violating
+                    federal law. And we need to go back to President Trump's successful immigration policies
+                    immediately.&rdquo;</p>
+                <p>Cesar lives in fear that under Trump&rsquo;s policies, his family could fall victim to mass
+                    deportations.</p>
+                <p>&ldquo;I don&rsquo;t want to get deported. I like my life here, and I don&rsquo;t see myself living
+                    in my country again because of how I look and my mindset,&rdquo; Cesar said. &ldquo;Venezuela is not
+                    my home. I will never be as happy as I am here than there,&rdquo;</p>
+                <p>In Venezuela, Cesar felt self-conscious about both his queerness and his appearance, often facing
+                    teasing from those around him because of his long hair. The constant mockery made him feel out of
+                    place and isolated.</p>
+                <p>He feels ashamed of the negative portrayals of Venezuelan immigrants in the news, as they ruin the
+                    reputation of his community. Though he once struggled with his identity, Cesar is now beginning to
+                    embrace it, finding strength in his experiences and the stories of others like him. He feels his
+                    authenticity and his identity became solidified once he came to the U.S.</p>
+                <p>He dreams of a day when he can feel secure in his place in America, free from the fear of deportation
+                    or discrimination, but the political landscape makes that dream seem elusive.</p>
+                <p>On Nov. 5, Cesar and 10 friends sat in Eigenmann Hall watching the election. They played games and
+                    chatted occasionally to distract themselves from the tense atmosphere. Cesar felt uneasy, as if no
+                    matter what they did, everyone&rsquo;s attention remained on him.</p>
+                <p>&ldquo;I felt the attention on me because my friends knew my temporary status and knew this would
+                    have an impact on me,&rdquo; said Cesar. &ldquo;If Kamala won, I felt there would be a chance I
+                    could go to IU and secure citizenship.&rdquo;</p>
+                <p>As the night went on and Trump won Pennsylvania, everyone lost hope and went home. Cesar cried and
+                    knew that there was no hope left. In the morning, Cesar checked the results and cried again after
+                    learning Trump won. His thoughts since have been filled with how life would be if he had to return
+                    to Venezuela.</p>
+                <p>The sense of hopelessness only adds to his worries. Cesar has already felt the weight of helplessness
+                    and limitations that come with being an immigrant, particularly through challenges in schooling.</p>
+
+                <p class="section-break">&mdash; &mdash; &mdash;</p>
+
+                <p>When he was a junior at Ben Davis High School, Cesar learned about Groups Scholars, a scholarship
+                    program across all Indiana University programs for first-generation students, from a friend.</p>
+                <p>To qualify for Groups, applicants must be residents of Indiana, U.S. citizens or green card holders,
+                    maintain a minimum GPA of 2.5, complete 34 mandatory courses, and meet certain income requirements.
+                </p>
+                <p>Although Cesar is a resident of Indiana, he does not have a green card, which made him worry that his
+                    status could complicate his application. However, he was ultimately accepted into both Indiana
+                    University and the Groups program and applied to be a Cinematic Arts major.</p>
+                <p>Once summer arrived, Cesar attended the Groups Summer Experience Program in Bloomington for seven
+                    weeks. The program serves as a boot camp to help students adjust to dorm life, classes, and the
+                    social aspects of college. He met many friends through the program.</p>
+                <p>&ldquo;The whole experience was what I imagined college would be like. It felt like I was already a
+                    student,&rdquo; Cesar said.</p>
+                <p>After the program ended, however, Cesar began facing difficulties. The week before freshman move-in,
+                    he had yet to receive his financial aid package and dorm assignment.</p>
+                <p>&ldquo;I called seven times, and the response was always the same: &lsquo;We&rsquo;re going to send
+                    your financial aid package; just wait,&rsquo;&rdquo; said Cesar.</p>
+                <p>On the morning of August 14, he received an email from Indiana University stating that his financial
+                    aid could not be processed due to his Temporary Protected Status. Before telling his parents, he
+                    reached out to the financial aid office, where a staff member connected him to a supervisor.
+                    Although the supervisor checked in with him throughout the day, she couldn&rsquo;t provide much
+                    assistance and advised him to wait until Friday for updates.</p>
+                <p>When Friday arrived, a call confirmed that Cesar&rsquo;s scholarship had not been processed.</p>
+                <p>Cesar and his mother cried together, and he struggled to keep himself occupied. He would watch films
+                    all day. His favorite being &ldquo;Everything Everywhere All at Once&rdquo; because it explores the
+                    feeling of being caught between multiple identities and world navigating cultural expectations,
+                    personal desires, and societal limitations. Films could only help so much. He leaned on his mom and
+                    friends for support. He texted his friends from IU, high school and Venezuela every night before
+                    bed. His parents were devastated but not disappointed. They knew that being an immigrant came with
+                    limitations and struggles.</p>
+                <p>In the week following the news about his financial aid, Cesar slept with his mom every night. Unable
+                    to rest, he would stay up talking to her for comfort, which helped distract him from his worries.
+                    Cesar believed America was where his dreams would become real, but it seemed that this was being
+                    taken away from him.</p>
+                <p>&ldquo;I felt like I finally could be my true authentic self in an environment like Groups and IU and
+                    it felt like I was being punished,&rdquo; said Cesar.</p>
+
+                <p class="section-break">&mdash; &mdash; &mdash;</p>
+
+                <p>The Groups scholarship is processed through FAFSA, which requires a Social Security Number or an
+                    A-number, a unique seven- to ten-digit identifier for immigrants. Without this number, financial aid
+                    cannot be processed.</p>
+                <p>FAFSA recently changed its application to make it shorter and easier, but many complications arose
+                    from the new system. Students with parents who do not have a Social Security Number found it more
+                    difficult to complete the form compared to previous years. The IRS Data Retrieval Tool also
+                    experienced issues, making it challenging for families to access their tax information. While the
+                    new form reduced the number of questions, it often increased confusion, with unclear language that
+                    was easily misinterpreted.</p>
+                <p>These problems resulted in a backlog on the FAFSA website, leading to slow loading times and frequent
+                    error messages. As a consequence, the processing of FAFSA applications was delayed, prompting many
+                    schools to extend their FAFSA deadlines and resulting in postponed financial aid packages for the
+                    fall semester.</p>
+                <p>The slow rollout of FAFSA verification and processing left Cesar's application in limbo, amplifying
+                    his anxiety about the future. Each day brought a mix of hope and dread as he waited for clarity,
+                    relying on his mother&rsquo;s support to help him cope with the uncertainty.</p>
+                <p>Many immigrants suffer from the limitations of not having a social security number. &mdash;-</p>
+                <p>In Bloomington, El Centro Comunal Latino provides a safe space for Hispanics in need of services and
+                    community support. The center primarily focuses on Spanish-speaking individuals and immigrants,
+                    helping with rent, utilities, mental health services, and groceries.</p>
+                <p>In the summer of 1999, a group of university and community women gathered for lunch to discuss the
+                    growing Latino population in Bloomington. All of them had something in common: providing support for
+                    the Latino community. They worked as interpreters, translators, or by referring individuals to local
+                    social service agencies that would best help their situation.</p>
+
+                <div class="side-by-side">
+                    <figure>
+                        <img src="./assets/ana_close.jpg"
+                            alt="A woman wearing a green shirt.">
+                        <figcaption>
+                            TODO: Catpion
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./assets/ana_sticker.jpg"
+                            alt="A bumper sticker with text reading 'No Human Being is Illegal' is attached with magnets to a gray surface.">
+                        <figcaption>
+                           TODO: Caption
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <p>Ana Cordero, the health projects coordinator, manages most activities and appointments at the center.
+                    El Centro partners with organizations in Bloomington and Indianapolis that require Spanish-speaking
+                    staff to assist clients. Most of the workers are volunteered based with Cordero being one of few
+                    employees.</p>
+                <p>&ldquo;Many immigrants here face limitations because they lack a driver&rsquo;s license or Social
+                    Security number, which restricts their mobility and opportunities. They can&rsquo;t solely rely on
+                    public assistance,&rdquo; Cordero said.</p>
+
+                <p class="section-break">&mdash; &mdash; &mdash;</p>
+
+                <p>Being an immigrant comes with limitations, but Cesar and his family have worked hard to overcome
+                    these challenges. Cesar has begun to take photographs professionally to continue improving his
+                    skills in film and camerawork to build his portfolio for schooling and future work. He promotes his
+                    photography primarily through word of mouth.</p>
+                <p>&ldquo;I would go up to people on campus and ask if I could take their photos. People would let me,
+                    and I started getting business that way,&rdquo; Cesar said.</p>
+                <p>Through these encounters, he not only honed his craft but also formed friendships. He met several of
+                    his peers in the Groups program by asking them to pose for portraits. These interactions created a
+                    domino effect, leading to more clients and expanding his network. His first major shoot was
+                    photographing an engagement for a couple who specifically requested a gay photographer.</p>
+                <p>The shoot was in late October and was significant to him, as it not only marked a milestone in his
+                    career but also resonated personally.</p>
+                <p>&ldquo;It gives me a hope I can find someone and a partner here,&rdquo; said Cesar. &ldquo;They have
+                    a freedom of hiring a gay person for someone for their engagement. In my country, that would never
+                    happen. I can see myself in them.&rdquo;</p>
+
+                <p class="section-break">&mdash; &mdash; &mdash;</p>
+
+                <p>Cesar created a professional Instagram account to showcase his photography. His first post featured
+                    the engagement photos, marking his first significant paid job. He is building a portfolio for
+                    potential clients and jobs.</p>
+                <p>Cesar was not given any official explanation for why his Ivy Tech application remained in limbo. He
+                    was able to register and sign up for classes mid-November with an Ivy Tech advisor.</p>
+                <p>He plans to study for a degree in Visual Communications at Ivy Tech next semester and if he is able
+                    to secure financial aid, he hopes to transfer his credits to IU and stay on track for his degree.
+                </p>
+
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2024 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
