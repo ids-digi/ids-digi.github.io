@@ -1,0 +1,3 @@
+[submodule "basketball"]
+	path = basketball
+	url = git@github.com:ids-digi/mateo-basketball-profile.git
