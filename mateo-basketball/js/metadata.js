@@ -9,7 +9,7 @@ const data = {
             "name": "Mateo Fuentes-Rohwer",
             "email": "matfuent@iu.edu",
             "twitter": "mateo_frohwer",
-            "pfp": "../mateo.jpg",
+            "pfp": "./mateo.jpg",
             "bio": "Mateo is a sophomore studying journalism and history. He has worked at the IDS since 2023, and he currently writes on the Indiana men's basketball beat."
         },
         "Design and development by": {
