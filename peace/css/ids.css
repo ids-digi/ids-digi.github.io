@@ -244,6 +244,8 @@ header {
 
 /* navbar */
 nav {
+    background-color: black;
+    display: block;
     color: white;
     position: fixed;
     width: 100%;
@@ -289,7 +291,7 @@ li.logo svg {
 }
 
 li.logo span {
-    display: none;
+    display: block;
     -webkit-transition: 1s;
     /* For Safari 3.1 to 6.0 */
     transition: 1s;

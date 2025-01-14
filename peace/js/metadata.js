@@ -1,7 +1,7 @@
 const data = {
     "url": "your-url-here",
     "slug": "Peace Activism Stories",
-    "headline": "Standing for peace: The quiet persistence of Bloomington&rsquo;s locals",
+    "headline": "Standing for peace: The quiet persistence of Bloomington's locals",
     "title": "Peace Activism Stories",
     "pub_date": "{insert your date in metadata.json}",
     "bylines": {

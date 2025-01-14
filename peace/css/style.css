@@ -181,28 +181,6 @@ h3 {
 /* 
 media queries helper
 */
-.helper {
-  /* comment out next line to get visual help with media queries while you code */
-  /*display: none !important;*/
-
-  width: 60px;
-  height: 60px;
-  background-color: red;
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.helper::after {
-  content: 'XS';
-  color: white;
-  font-family: Lato, sans-serif;
-  font-weight: bold;
-  font-size: 25px;
-}
 
 * {box-sizing:border-box}
 
@@ -210,63 +188,4 @@ media queries helper
 .audio {
   display: flex;
   justify-content: center;
-}
-
-
-/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
-/* use these for responsive design — you can set different styles based on how wide the screen is */
-/* Extra small devices (portrait phones, less than 576px)
-No media query for `xs` since this is the default */
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  .helper {
-    background-color: orange;
-  }
-
-  .helper::after {
-    content: 'S';
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  header {
-    /* adjust header image positioning for larger devices if needed */
-    /* you can also change the header image for mobile here */
-    /* background-position: 50% 50%; */
-  }
-
-  .helper {
-    background-color: yellow;
-  }
-
-  .helper::after {
-    content: 'M';
-    color: black;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .helper {
-    background-color: green;
-  }
-
-  .helper::after {
-    content: 'L';
-    color: white;
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .helper {
-    background-color: blue;
-  }
-
-  .helper::after {
-    content: 'XL';
-  }
-
 }
