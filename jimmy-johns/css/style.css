@@ -159,7 +159,7 @@ media queries helper
     background-color: black; /* Failsafe if things clip */
   
     /*  Gradient + 2 images */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('../assets/SLDKFJSDF:LSKDFJSD:FLKJ.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/e2aacdff-0e44-4cad-85f4-28667fe35d7e.original.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
