@@ -1,8 +1,8 @@
 const data = {
     "url": "jimmy-johns-weekly-sandwich-tradition-bloomington",
-    "slug": "Jimmy John&rsquo;s Friday",
-    "headline": "Jimmy John’s Friday: One IU student’s love for the famous sandwich chain",
-    "title": "Jimmy John&rsquo;s Friday",
+    "slug": "Jimmy John's Friday",
+    "headline": "Jimmy John's Friday: One IU student's love for the famous sandwich chain",
+    "title": "Jimmy John's Friday",
     "pub_date": "Jan. 22, 2025",
     "bylines": {
         "By": {
