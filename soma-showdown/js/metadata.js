@@ -23,7 +23,7 @@ const data = {
 }
 
 // bylines
-const byline_types = ["By", "Photos by", "Design and development by", "Graphics by"]
+const byline_types = ["Photos by", "Design and development by"]
 let bylines_html = '';
 let bios_html = '';
 
@@ -77,7 +77,7 @@ function setAuthorBio(type, author) {
 }
 
 document.querySelector('#bylines').innerHTML = bylines_html;
-document.querySelector('.author-bios').innerHTML = bios_html;
+// document.querySelector('.author-bios').innerHTML = bios_html;
 
 // pubdate
 document.querySelector('#pubdate').innerHTML = "Published " + data.pub_date;
