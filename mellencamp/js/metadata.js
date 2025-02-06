@@ -1,16 +1,16 @@
 const data = {
-  url: 'your-url-here',
-  slug: 'Meet the local artist who sculpted John Mellencamp',
-  headline: 'Meet the local artist who sculpted John Mellencamp',
+  url: 'sculptor-john-mellencamp-bloomington-local',
+  slug: '‘He uses words like I use clay’: Meet the local sculptor who immortalized John Mellencamp',
+  headline: '‘He uses words like I use clay’: Meet the local sculptor who immortalized John Mellencamp',
   title: 'Mellencamp Sculptor',
-  pub_date: '{insert your date in metadata.json}',
+  pub_date: 'Feb 6, 2025',
   bylines: {
     By: {
       name: 'Abby Turner',
-      email: 'catchar@iu.edu',
+      email: 'abbturne@iu.edu',
       //   twitter: 'catcharron',
-      pfp: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIvqwzRkodgubCVQviowyM3RX_KC0oNBVvMw&s',
-      bio: 'TODO: Abby Bio',
+      pfp: 'https://s3.amazonaws.com/snwceomedia/ids/c0611591-e0c7-4d2c-a1ff-889d7a3a66d9.original.jpg',
+      bio: 'Abby has written for the IDS since 2023.',
     },
     // 'Photos by': {
     //   name: 'Izzy Myszak',
@@ -21,14 +21,14 @@ const data = {
       name: 'Sky Angeles',
       email: 'skyangel@iu.edu',
       //   twitter: 'carsonology',
-      pfp: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZEYsAVJfucz9zylIS9C1lsP1mQ-0WoBG33Q&s',
+      pfp: 'https://s3.amazonaws.com/snwceomedia/ids/54ab6e00-9a7a-4ae9-9843-cf1be78ab4eb.original.jpg',
       bio: 'Sky has worked at the IDS since 2024 as a web developer.',
     },
     'Design by': {
       name: 'Mansi Kadam',
       email: 'mkadam@iu.edu',
       //   twitter: 'carsonology',
-      pfp: 'https://womenandtech.indiana.edu/images/people/mansi-kadam-square-768x768.jpg',
+      pfp: 'https://s3.amazonaws.com/snwceomedia/ids/ef94f3c8-fec1-40a0-bb99-a04e49104efd.original.jpg',
       bio: 'Mansi has worked at the IDS since 2024 as a designer.',
     },
     // 'Graphics by': {

@@ -29,6 +29,7 @@ article {
 
 
 #header-area h3 {
+  font-size: 36px;;
   margin-top: 0px;
 }
 
@@ -39,6 +40,7 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: flex-end !important;
+  min-height: 45vh;
   margin-left: 0 !important;
   /* position: relative; */
   /* top: 40vh !important; */
@@ -101,7 +103,7 @@ header {
   background-size: cover;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
-    url('../piano.jpg');
+    url('https://s3.amazonaws.com/snwceomedia/ids/23b86439-98d4-4dbd-86f8-09847870f7e0.original.jpg');
     position: absolute;
     top: 0px;
     left: 0px;
