@@ -1,7 +1,7 @@
 const data = {
     "url": "valentines-day-florist-local-bloomington-photos",
     // slug will appear in the nav bar
-    "slug": "PHOTOS: Florists prepare for Valentine's Day",
+    "slug": "Valentine's Florist",
     // title will appear on the tab in the browser
     "title": "PHOTOS: Florists prepare for Valentine's Day",
     // make sure to update the pub date before finishing the project

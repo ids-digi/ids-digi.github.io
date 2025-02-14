@@ -12,7 +12,7 @@ function checkScroll() { // callback function
     // check whether scroll position is above/below target
     // toggle css styles accordingly
     if(window.scrollY > startY) { 
-        nav.style.backgroundColor = 'black';
+        nav.style.backgroundColor = '#00000033';
         slug.style.display = 'block';
     } else {
         nav.style.backgroundColor = 'transparent';
