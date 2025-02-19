@@ -16,12 +16,39 @@
 header {
   /* add header image below */
   /* can use a file path before the photo is uploaded to ceo */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
-    url('https://s3.amazonaws.com/snwceomedia/ids/3baaa014-57cf-4edb-a613-2e48d7944948.original.jpg');
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
   background-position: center center;
+}
+
+.record {
+  background-size: contain;
+  filter: brightness(0.7);
+
+  aspect-ratio: 1;
+
+  position: fixed;
+  pointer-events: none;
+}
+
+#record1 {
+  background-image: url("../record1.PNG");
+}
+
+#record2 {
+  background-image: url("../record3.PNG");
+}
+
+#record3 {
+  background-image: url("../record4.PNG");
+}
+
+@media (max-width: 1000px) {
+  #record2 {
+    display: none;
+  }
 }
 
 /*
@@ -61,7 +88,7 @@ h2 {
   max-width: var(--width-lg);
   /* text color */
   color: white;
-  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 
 .headline-container {

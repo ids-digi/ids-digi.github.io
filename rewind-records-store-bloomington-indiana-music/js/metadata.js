@@ -1,7 +1,7 @@
 const data = {
   url: 'your-url-here',
   slug: 'Rewind Records',
-  headline: 'Rewind Records, Bloomington’s hidden gem for vintage lovers',
+  headline: '‘Anyone can shop here’: Bloomington music lovers find vintage vinyls at Rewind Records',
   title: 'Rewind Records',
   pub_date: '{insert your date in metadata.json}',
   bylines: {
@@ -12,25 +12,43 @@ const data = {
       pfp: 'Abby.jpg',
       bio: 'Abby...',
     },
-    'Development by': {
-      name: 'Sky Angeles',
-      email: 'skyangel@iu.edu',
-      //   twitter: 'carsonology',
-      pfp: 'https://s3.amazonaws.com/snwceomedia/ids/54ab6e00-9a7a-4ae9-9843-cf1be78ab4eb.original.jpg',
-      bio: 'Sky has worked at the IDS since 2024 as a web developer.',
+    'Photos by': {
+      name: 'Abby Whited',
+      email: 'abwhited@iu.edu',
+      //   twitter: 'catcharron',
     },
-    'Design by': {
+    'Development by': [
+      {
+        name: 'Sky Angeles',
+        email: 'skyangel@iu.edu',
+        pfp: 'https://s3.amazonaws.com/snwceomedia/ids/54ab6e00-9a7a-4ae9-9843-cf1be78ab4eb.original.jpg',
+        bio: 'Sky has worked at the IDS since 2024 as a web developer.',
+      },
+      {
+        name: 'Matei Cloteaux',
+        email: 'mcloteau@iu.edu',
+        // pfp: 'https://s3.amazonaws.com/snwceomedia/ids/582468e2-d203-46f6-bbf2-3a83a4f981ec.original.jpg',
+        // bio: 'Matei has worked at the IDS since 2023 and currently serves as a web developer. ',
+      }
+    ],
+    'Design by': [{
       name: 'Madhumitha Manimaran',
       email: 'mamanim@iu.edu',
       //   twitter: 'carsonology',
-      pfp: 'https://s3.amazonaws.com/snwceomedia/ids/862800f7-b6fd-46d4-a747-0ec4d09ecb4a.original.jpg',
-      bio: 'Madhumitha has worked at the IDS since 2024 as a designer.',
+      // pfp: 'https://s3.amazonaws.com/snwceomedia/ids/862800f7-b6fd-46d4-a747-0ec4d09ecb4a.original.jpg',
+      // bio: 'Madhumitha has worked at the IDS since 2024 as a designer.',
     },
+    
+  ],
+  'Graphics by': {
+    name: 'Alayna Wilkening',
+    email: 'awilkeni@iu.edu'
+  }
   },
 };
 
 // bylines
-const byline_types = ['By', 'Development by', 'Design by'];
+const byline_types = ['By', 'Photos by', 'Development by', 'Design by', 'Graphics by'];
 let bylines_html = '';
 let bios_html = '';
 
