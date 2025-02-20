@@ -25,27 +25,29 @@ header {
 
 .record {
   background-size: contain;
-  filter: brightness(0.7);
+  filter: contrast(1.5) brightness(.65);
+
 
   aspect-ratio: 1;
 
   position: fixed;
   pointer-events: none;
+  z-index: 0;
 }
 
 #record1 {
-  background-image: url("../record1.PNG");
+  background-image: url("https://s3.amazonaws.com/snwceomedia/ids/941c656d-6e91-4f55-8ae4-a818046033a6.sized-1000x1000.png");
 }
 
 #record2 {
-  background-image: url("../record3.PNG");
+  background-image: url("https://s3.amazonaws.com/snwceomedia/ids/8be46dfd-c6d0-456f-95a8-673e4a506e5e.sized-1000x1000.png");
 }
 
 #record3 {
-  background-image: url("../record4.PNG");
+  background-image: url("https://s3.amazonaws.com/snwceomedia/ids/e93441a3-acfc-49e7-8064-65040205c974.sized-1000x1000.png");
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 512px) {
   #record2 {
     display: none;
   }

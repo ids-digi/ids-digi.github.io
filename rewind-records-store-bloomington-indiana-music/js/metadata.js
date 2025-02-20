@@ -5,19 +5,14 @@ const data = {
   title: 'Rewind Records',
   pub_date: '{insert your date in metadata.json}',
   bylines: {
-    By: {
+    'Story and photos by': {
       name: 'Abby Whited',
       email: 'abwhited@iu.edu',
       //   twitter: 'catcharron',
-      pfp: 'Abby.jpg',
-      bio: 'Abby...',
+      pfp: 'https://s3.amazonaws.com/snwceomedia/ids/74d0b04f-a5ef-46f2-b1a3-e7fe7aa70dcd.original.jpg',
+      bio: 'Abby has written for the IDS since 2024.',
     },
-    'Photos by': {
-      name: 'Abby Whited',
-      email: 'abwhited@iu.edu',
-      //   twitter: 'catcharron',
-    },
-    'Development by': [
+    'Design and development by': [
       {
         name: 'Sky Angeles',
         email: 'skyangel@iu.edu',
@@ -29,9 +24,8 @@ const data = {
         email: 'mcloteau@iu.edu',
         // pfp: 'https://s3.amazonaws.com/snwceomedia/ids/582468e2-d203-46f6-bbf2-3a83a4f981ec.original.jpg',
         // bio: 'Matei has worked at the IDS since 2023 and currently serves as a web developer. ',
-      }
-    ],
-    'Design by': [{
+      },
+      {
       name: 'Madhumitha Manimaran',
       email: 'mamanim@iu.edu',
       //   twitter: 'carsonology',
@@ -40,7 +34,7 @@ const data = {
     },
     
   ],
-  'Graphics by': {
+  'Illustrations by': {
     name: 'Alayna Wilkening',
     email: 'awilkeni@iu.edu'
   }
@@ -48,7 +42,7 @@ const data = {
 };
 
 // bylines
-const byline_types = ['By', 'Photos by', 'Development by', 'Design by', 'Graphics by'];
+const byline_types = ['By', 'Story and photos by', 'Design and development by', 'Design by', 'Illustrations by'];
 let bylines_html = '';
 let bios_html = '';
 
@@ -101,7 +95,8 @@ function setAuthorBio(type, author) {
                         <div>
                             <img src="${author.pfp}" alt="${author.name}">
                             <div>
-                            <p>${type} <a href="https://idsnews.com/staff/${author.name
+                            <p>${type == 'Design and development by' ? 'Web development by' : type} 
+                              <a href="https://idsnews.com/staff/${author.name
       .split(' ')
       .join('-')}" target="_blank">${author.name}</a></p>
                             <p>${author.bio}  ${

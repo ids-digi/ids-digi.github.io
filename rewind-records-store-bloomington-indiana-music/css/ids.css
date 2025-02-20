@@ -23,6 +23,10 @@ html {
     box-sizing: inherit;
 }
 
+.ad-code {
+    text-align: center;
+}
+
 /* UTILITIES */
 /* hides an element on screen, but not from screen readers */
 .sr-only {
