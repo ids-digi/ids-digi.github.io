@@ -64,7 +64,8 @@ article {
   font-size: 40px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  margin-bottom: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 /* 206 x 524 */
@@ -73,7 +74,7 @@ article {
   top: 60px;
   left: var(--statue-left);
   height: var(--statue-height);
-  background-image: url("/2008-Oscar-Statue.png");
+  background-image: url("./../2008-Oscar-Statue.png");
   width: var(--statue-width);
   background-repeat: no-repeat;
   background-size: contain;
@@ -81,9 +82,6 @@ article {
 
 }
 
-* {
-  /* border: 2px solid lime; */
-}
 
 nav {
   height: 60px;
@@ -172,7 +170,8 @@ live-update .timestamp {
 
 
 live-update figure {
-  width: fit-content;
+  /* width: fit-content; */
+  width: 350px;
   margin: 0px;
 }
 
@@ -283,7 +282,9 @@ live-update p {
   /* width: 100%; */
 }
 
-.news-story p {}
+.news-story p {
+  margin-top: 0px;
+}
 
 
 /* 
@@ -400,6 +401,7 @@ No media query for `xs` since this is the default */
 
 
   live-update figure {
+    /* width: 300px; */
     width: fit-content;
     margin: 0px;
   }
@@ -419,6 +421,11 @@ No media query for `xs` since this is the default */
     text-transform: none;
     font-family: "Inter", sans-serif;
     font-size: .8em;
+    width: 300px;
+  }
+
+  live-update .caption {
+    width: 300px;
   }
 
   live-update p {
@@ -451,7 +458,9 @@ No media query for `xs` since this is the default */
     color: black;
   }
 
-
+.news-story p {
+  margin-top: 10px;
+}
 
   .news-story img {
     width: 100%;
@@ -505,6 +514,7 @@ No media query for `xs` since this is the default */
     padding-right: 20px;
     /* Should be 100vw - statue-right */
     /* width: 200px; */
+    gap: 0px;
   }
 
   live-update {
@@ -523,6 +533,7 @@ No media query for `xs` since this is the default */
   }
 
   live-update figure {
+    /* width: 100%; */
     width: 100%;
     margin: 0px;
   }
