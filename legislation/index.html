@@ -123,32 +123,40 @@
         <section class="legislation-container">
             <h2 class="section-title">Legislation</h2>
             <p class="section-description">
-                Preparation and enactment of laws by a legislative body through its lawmaking process.
-                The legislative process includes evaluating, amending, and voting on proposed laws.
+                <!-- TODO: Rewrite the paragraph -->
+                The IDS is tracking prominent bills from the 2025 legislative session
+                that would have a particular impact on IU and Monroe County.
+
+                See the progress of each bill as it makes its way through the Indiana Senate and House of
+                Representatives
+                and read our in-depth coverage of each bill.
             </p>
 
             <!-- Filter Buttons -->
             <div class="filters">
                 <button value="all" class="filter-btn active">All Bills</button>
-                <button value="senate" class="filter-btn">Senate Bills</button>
-                <button value="house" class="filter-btn">House Bills</button>
+                <button value="SB" class="filter-btn">Senate Bills</button>
+                <button value="HB" class="filter-btn">House Bills</button>
                 <button value="active" class="filter-btn">Active</button>
-                <button value="inactive" class="filter-btn">Inactive</button>
+                <button value="inactive" class="filter-btn">Withdrawn</button>
                 <button value="signed" class="filter-btn">Signed</button>
             </div>
         </section>
 
 
+        <div id="statistics"></div>
 
 
         <div class="main-container">
             <div class="bills-display">
+                <div id="pagination-container1" class="pagination"></div>
+
                 <div class="content-container">
                     <!-- Dynamic Card Container -->
                     <div id="card-container"></div>
                 </div>
                 <!-- Move Pagination Container Below -->
-                <div id="pagination-container" class="pagination"></div>
+                <div id="pagination-container2" class="pagination"></div>
             </div>
 
             <!-- Timeline Container -->
@@ -166,7 +174,6 @@
 
         </div>
 
-        </div>
 
 
         <!-- Additional resources -->
@@ -242,6 +249,9 @@
 
     <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Sheetrock connector! -->
+    <script src="https://unpkg.com/sheetrock@1.2.0/dist/sheetrock.min.js"></script>
+
     <script src="js/ads.js"></script>
     <script src="js/ids.js"></script>
     <script src="js/metadata.js"></script>

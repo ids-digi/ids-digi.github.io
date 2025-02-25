@@ -6,6 +6,8 @@
 /* FONTS */
 /* add any @import statements for novelty fonts you want to use here ↓ */
 
+
+
 /* COLORS */
 :root {
   /* --mycolor: #your color here; */
@@ -13,6 +15,10 @@
   --darkgray: rgb(80, 80, 80);
 
   --nav-height: 70px;
+}
+
+#statistics {
+  display: none;
 }
 
 header {
@@ -54,7 +60,7 @@ nav {
 
 li.logo span {
   display: block;
-  font-family: 'Inter' sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 28px;
   font-weight: 900;
   color: black;
@@ -79,17 +85,16 @@ body {
   padding: 20px;
 }
 
-/* Main Flexbox Layout for Cards & Timeline */
-
-
 .main-container {
   display: flex;
   justify-content: center;
   /* Centers content horizontally */
   align-items: flex-start;
   gap: 20px;
-  width: 90%;
-  max-width: 1200px;
+  /* width: 1000px; */
+  /* width: 90%; */
+  /* max-width: 1200px; */
+  max-width: var(--large  );
   margin: 0 auto;
 }
 
@@ -97,7 +102,7 @@ body {
 .content-container {
   display: flex;
   flex-direction: column;
-  /* Stacks #card-container and #pagination-container */
+  /* Stacks #card-container and .pagination */
   align-items: center;
   /* Centers content */
   width: 100%;
@@ -121,13 +126,14 @@ body {
 
 
 /* Ensures pagination appears centered below the cards */
-#pagination-container {
+.pagination {
   display: flex;
   justify-content: center;
   /* Center horizontally */
   align-items: center;
   gap: 10px;
   margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -232,8 +238,11 @@ body {
 
 }
 
+.no-bill-msg {
+  width: 712px;
+}
 /* Card */
-.card {
+.card, .no-bill-msg {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -471,7 +480,7 @@ body {
 .timeline {
   --completed-height: 0%;
   /* Default */
-  transition: --completed-height 0.5s ease-in-out;
+  transition: var(--completed-height) 0.5s ease-in-out;
 }
 
 /* Keyframes for timeline item animation */
@@ -503,12 +512,9 @@ body {
 
 .resources-container h2 {
   color: #222;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   /* display: flex;
   align-items: start; */
-
-
-
 }
 
 /* Scrollable container */
@@ -596,13 +602,14 @@ body {
     align-items: center;
   }
 
-  #pagination-container {
+  .pagination {
     width: 100%;
     justify-content: center;
   }
 
   .timeline-container {
     width: 100%;
+    min-height: 250px;
   }
 
   /* } */

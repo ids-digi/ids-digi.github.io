@@ -14,7 +14,7 @@ const data = {
         "Development by": {
             "name": "Nikhil Sai Jaddu",
             "email": "njaddu@iu.edu",
-            "pfp": "https://ca.slack-edge.com/T0G159G5S-U07PHA7MGKG-a823f28e9763-512",
+            "pfp": "https://s3.amazonaws.com/snwceomedia/ids/b0beaf4d-b88c-4cb1-95d4-41754c3d51f7.original.jpg",
             "bio": "Nikhil has worked for the IDS as a developer since 2024."
         },
     }
