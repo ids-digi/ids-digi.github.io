@@ -256,6 +256,10 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.card {
+  cursor: pointer;
+}
+
 /* Icon */
 .icon {
   width: 100px;
@@ -353,6 +357,8 @@ body {
   border: 1px solid #b30000 !important;
   transition: border 0.3s ease-in-out;
 }
+
+
 
 
 /* ------------------------------------------ */
@@ -551,9 +557,6 @@ body {
   transition: transform 0.2s ease-in-out;
 }
 
-.resource:hover {
-  transform: translateY(-3px);
-}
 
 /* Title */
 .resource h3 {
@@ -596,6 +599,14 @@ body {
 
 /* Responsive Fix for Smaller Screens */
 @media (max-width: 768px) {
+  #conference-note {
+    position: sticky;
+    width: 100%;;
+    left: 0px;
+    text-wrap: wrap;
+    /* width: 260px; */
+  }
+
   .main-container {
     flex-direction: column;
     /* Stack content */
@@ -735,7 +746,6 @@ body {
     /* Space for progress bar */
 
     flex-direction: column;
-    align-items: center;
     position: relative;
     scroll-behavior: smooth;
     /* Smooth scrolling */

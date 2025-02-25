@@ -1,23 +1,3 @@
-// Load resources dynamically
-const resources = [
-    {
-        title: "And here lies a recap of key bills that failed to make it to the finish line • Indiana Capital Chronicle",
-        description: "Overview the over 900 bills that have already failed on their journey to becoming laws.",
-        link: "https://indianacapitalchronicle.com/2025/02/25/and-here-lies-a-list-of-key-bills-that-failed-to-make-it/"
-    },
-    {
-        title: "Bills for 2025 Session • Indiana General Assembly",
-        description: "A list of all remaining bills for the current legislative session.",
-        link: "https://iga.in.gov/legislative/2025/bills"
-    },
-    {
-        title: "Testimony Appearance Form",
-        description: "An appearance form to testify in person before a committee of the Indiana General Assembly, expressing support or opposition to legislation.",
-        link: "https://iga.in.gov/2025/committees/testify"
-    }
-];
-
-
 function renderBills(bills) {
     const cardContainer = document.getElementById("card-container");
 
@@ -41,7 +21,7 @@ function renderBills(bills) {
                     </div>
                     <p class="card-description">${bill.description}</p>
                     <div class="read-more">
-                        ${bill.link ? `<a href="${bill.link}">Read more on IDS &rarr;</a>` : ``}
+                        ${bill.link ? `<a href="${bill.link}" target="_blank">Read more on IDS &rarr;</a>` : ``}
                     </div>
                 </div>
             `;
@@ -50,9 +30,7 @@ function renderBills(bills) {
     }
 
     const filtersContainer = document.querySelector(".filters");
-    // const paginationContainer = document.getElementById("pagination-container");
     const paginationContainers = [document.getElementById("pagination-container1"), document.getElementById("pagination-container2")];
-    paginationContainers.forEach(paginationContainer => paginationContainer.classList.add("pagination"));
 
 
     let filteredBills = [...bills]; // Store currently displayed bills
@@ -175,7 +153,7 @@ function renderBills(bills) {
 
     // Event handler for bill clicks
     function onBillClick(event) {
-        event.preventDefault();
+        // event.preventDefault();
         const billId = event.currentTarget.dataset.billId;
 
         // Remove red border from all cards
@@ -252,16 +230,6 @@ function renderBills(bills) {
 
         }, 300); // Delay clearing old items to match fade-out duration
     }
-
-
-    const resourcesContainer = document.getElementById('additional-resources-container');
-    resourcesContainer.innerHTML = resources.map(resource => `
-            <div class="resource">
-                <h3>${resource.title}</h3>
-                <p>${resource.description}</p>
-                <a href="${resource.link}" class="read-more">Read more on IDS &rarr;</a>
-            </div>
-        `).join('');
 }
 
 const spreadsheet = "https://docs.google.com/spreadsheets/d/1N-hq_WWkWgC2Gea2XJcr6Vkreb1Tp1Rxmlp-tRrKHTY/edit?gid=0#gid=0"
@@ -296,16 +264,33 @@ document.addEventListener("DOMContentLoaded", () => {
             //     "date_signed": 12,
             // }
 
+
+
             let bills = rows.map(r => {
-                let timeline = [
-                    { status: "Introduced", date: r[6] },
-                    { status: "House Passed", date: r[7] },
-                    { status: "Senate Passed", date: r[8] },
-                    { status: "Conference", date: r[9] },
-                    { status: "House Again", date: r[10] },
-                    { status: "Senate Again", date: r[11] },
-                    { status: "Signed", date: r[12] }
-                ];
+
+                let timeline; 
+
+                if (!r[9]) {
+                    timeline = [
+                        { status: "Introduced", date: r[6] },
+                        { status: "House Passed", date: r[7] },
+                        { status: "Senate Passed", date: r[8] },
+                        { status: "Signed", date: r[12] }
+                    ];
+                } else {
+                    timeline = [
+                        { status: "Introduced", date: r[6] },
+                        { status: "House Passed", date: r[7] },
+                        { status: "Senate Passed", date: r[8] },
+                        { status: "Conference", date: r[9] },
+                        { status: "House Approval", date: r[10] },
+                        { status: "Senate Approval", date: r[11] },
+                        { status: "Signed", date: r[12] }
+                    ];
+                }
+
+                console.log(timeline);
+
                 return {
                     id: r[0],
                     type: r[1],
