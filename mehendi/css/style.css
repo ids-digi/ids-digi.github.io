@@ -14,7 +14,9 @@
 }
 
 
-
+.ad-code {
+  text-align: center;
+}
 
 header {
   /* add header image below */
@@ -34,6 +36,10 @@ header {
 #no-left {
   margin-left: 0px;
   padding-left: 0px;
+}
+
+#no-left p {
+  margin-top: 0px;
 }
 
 
@@ -189,16 +195,24 @@ No media query for `xs` since this is the default */
     -sm); */
   }
 
+  .headline-container {
+    margin: auto 20px;
+  }
+
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   h2 {
-    font-size: 2.4em;
+    font-size: 1.8em;
   }
 
   .side-by-side-by-side figure {
     width: 40vw;
+  }
+
+  .side-by-side {
+    grid-template-columns: auto;
   }
 
   .headline-container {

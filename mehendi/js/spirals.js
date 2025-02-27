@@ -2,6 +2,7 @@ function loadAndResize() {
   const spirals = document.querySelectorAll('.spiral-container');
 
   spirals.forEach((spiral) => spiral.style.setProperty('display', 'none'))
+  document.querySelector('.all-spirals').style.setProperty('height', '0px')
 
   const height = document.documentElement.scrollHeight;
   document.querySelector('.all-spirals').style.setProperty('height', `${height}px`)
