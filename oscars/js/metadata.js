@@ -1,33 +1,18 @@
 const data = {
-    "url": "your-url-here",
-    "slug": "Story slug",
-    "headline": "This is the headline",
-    "title": "Buildout Template",
-    "pub_date": "{insert your date in metadata.json}",
+    "url": "oscars-live-updates-2025",
+    "slug": "Oscars Updates",
+    "headline": "View live oscars updates",
+    "title": "Oscars Updates",
+    "pub_date": "March 1, 2025",
     "bylines": {
-        "By": {
-            "name": "Cate Charron",
-            "email": "catchar@iu.edu",
-            "twitter": "catcharron",
-            "pfp": "https://pbs.twimg.com/profile_images/1499562155896619014/CUD2EvuV_400x400.jpg",
-            "bio": "Cate has worked at the IDS since 2019 as a reporter and designer."
-        },
-        "Photos by": {
-            "name": "Izzy Myszak",
-            "email": "izzymyszak@iu.edu",
-            "twitter": "izzymyszak"
-        },
         "Design and development by": {
-            "name": "Carson TerBush",
-            "email": "cterbush@iu.edu",
-            "twitter": "carsonology",
-            "pfp": "https://pbs.twimg.com/profile_images/1477852735278129152/vk-AiTE6_400x400.jpg",
-            "bio": "Carson has worked at the IDS since 2019 as a reporter and designer."
+            "name": "Calvin Josenhans",
+            "email": "cjosenha@iu.edu",
+            "twitter": "CalvinJosenhans",
         },
         "Graphics by": {
-            "name": "Vivek Rao",
-            "email": "vivrao@iu.edu",
-            "twitter": "vivrao"
+            "name": "Alayna Wilkening",
+            "email": "awilkeni@iu.edu",
         }
     }
 }

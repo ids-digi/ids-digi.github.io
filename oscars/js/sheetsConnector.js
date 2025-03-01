@@ -17,10 +17,12 @@ class LiveUpdate extends HTMLElement {
     const caption = this.getAttribute('caption')
     const credit = this.getAttribute('credit')
     // const link = this.getAttribute('href');
+    const twitter = this.getAttribute('twitter')
+    let twitter_link = `<span><a href="https://twitter.com/${twitter}" target="_blank">@${twitter}</a></span>`
     this.innerHTML = `
       <div>
       <div class="head">
-      <p class="credit">${author}</p>
+      <p class="credit">${author} ${twitter ? '<br>' + twitter_link : ''}</p>
       <p class="timestamp">${new Date(time).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true })}</p>
       </div> 
       <h3>${title}</h3>
@@ -62,10 +64,11 @@ function handle(err, opt, res) {
     liveUpdate.setAttribute("time", rows[i]['cellsArray'][0])
     liveUpdate.setAttribute("title", rows[i]['cellsArray'][1])
     liveUpdate.setAttribute("author", rows[i]['cellsArray'][2])
-    liveUpdate.setAttribute("para", rows[i]['cellsArray'][3])
-    liveUpdate.setAttribute("image", rows[i]['cellsArray'][4])
-    liveUpdate.setAttribute("caption", rows[i]['cellsArray'][5])
-    liveUpdate.setAttribute("credit", rows[i]['cellsArray'][6])
+    liveUpdate.setAttribute("twitter", rows[i]['cellsArray'][3])
+    liveUpdate.setAttribute("para", rows[i]['cellsArray'][4])
+    liveUpdate.setAttribute("image", rows[i]['cellsArray'][5])
+    liveUpdate.setAttribute("caption", rows[i]['cellsArray'][6])
+    liveUpdate.setAttribute("credit", rows[i]['cellsArray'][7])
 
     cont.prepend(liveUpdate)
   }
