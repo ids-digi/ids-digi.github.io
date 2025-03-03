@@ -6,7 +6,7 @@
 /* FONTS */
 /* add any @import statements for novelty fonts you want to use here ↓ */
 
-@font-face {
+/* @font-face {
   font-family: 'Mandingo';
   src: url('../fonts/MANDINGO.TTF');
 }
@@ -14,7 +14,7 @@
 @font-face {
   font-family: 'NewBaskerville';
   src: url('../fonts/NewBaskerville\ Regular.ttf');
-}
+} */
 
 /* COLORS */
 :root {
@@ -127,17 +127,18 @@ h3 {
 
 
 h1 {
-  font-family: 'NewBaskerville', serif;
+  /* font-family: 'NewBaskerville', serif; */
   /* text-align: left; */
   color: #1d1f22;
   text-shadow: none;
 }
 
 h2 {
-  font-family: 'Mandingo', sans-serif;
+  /* font-family: 'Mandingo', sans-serif; */
   /* text-align: left; */
   color: #1d1f22;
   text-shadow: none;
+  font-size: 32px;
 }
 
 .dropcap:first-letter {
@@ -194,7 +195,7 @@ No media query for `xs` since this is the default */
   }
 
   h2{
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
@@ -206,7 +207,7 @@ No media query for `xs` since this is the default */
   }
 
   h2{
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 

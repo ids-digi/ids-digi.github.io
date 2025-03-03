@@ -9,7 +9,7 @@ const data = {
             "name": "Grace Romine",
             "email": "gmromine@iu.edu",
             "pfp": "https://s3.amazonaws.com/snwceomedia/ids/a8d7ae4f-d9ca-483a-b9ba-004f129196fb.original.jpg",
-            "bio": "Grace Romine has been writing for the IDS since 2023. "
+            "bio": "Grace Romine is an arts editor and has worked for the IDS since 2023."
         },
         "Photos by": {
             "name": "Molly Gregory",
