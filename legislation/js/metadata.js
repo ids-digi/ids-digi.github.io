@@ -1,7 +1,7 @@
 const data = {
     "url": "local-bills-tracker-bloomington",
     "slug": "Legislation Tracker",
-    "headline": "Legislation Tracker",
+    "headline": "Your guide to Indiana’s 2025 legislative session",
     "title": "Legislation Tracker",
     "pub_date": "March 3, 2025",
     "bylines": {
