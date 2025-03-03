@@ -1,6 +1,6 @@
 const data = {
     "url": "brusters-ice-cream-reopening-girl-scouts-pup-tradition",
-    "slug": "Bruster's re-opens for the season",
+    "slug": "Bruster's re-opens",
     "headline": "Bruster's re-opens for the season",
     "title": "Bruster's re-opens",
     "pub_date": "March 3, 2025",
