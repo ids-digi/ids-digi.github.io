@@ -39,6 +39,7 @@ li.toggle {
 
 #additional-resources-container {
   justify-content: center;
+  max-width: var(--width-xl);
 }
 
 main {
@@ -530,14 +531,14 @@ body {
   /* Allows cards to wrap into multiple rows */
   justify-content: flex-start;
   /* Center cards */
-  gap: 20px;
   /* Space between cards */
-  padding: 10px;
+  gap: 15px;
+  /* padding: 10px; */
 }
 
 /* Card styling */
 .resource {
-  width: 320px;
+  width: 304px;
   /* Set a fixed width */
   background: white;
   border-radius: 8px;

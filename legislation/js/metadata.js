@@ -1,9 +1,9 @@
 const data = {
-    "url": "your-url-here",
+    "url": "local-bills-tracker-bloomington",
     "slug": "Legislation Tracker",
-    "headline": "This is the headline",
+    "headline": "Legislation Tracker",
     "title": "Legislation Tracker",
-    "pub_date": "{insert your date in metadata.json}",
+    "pub_date": "March 3, 2025",
     "bylines": {
         "Design by": {
             "name": "Mansi Kadam",
