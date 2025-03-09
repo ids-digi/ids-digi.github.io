@@ -17,6 +17,12 @@ nav {
   position: fixed;
 }
 
+#arts.wide-left {
+  width: 40%;
+  /* width: 80%; */
+  /* height: 100%; */
+}
+
 header {
   background-color: black;
   background-repeat: no-repeat;
@@ -32,6 +38,22 @@ header {
   text-align: center;
 }
 
+.pull-quote-border {
+  /* position: absolute; */
+  width: 80%;
+  height: 2px;
+  background-color: var(--idsred);
+  margin: auto;;
+}
+
+.pull-quote-center {
+  padding: 0;
+}
+
+.pull-quote-center p  {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 
 header.no-filter {
@@ -267,6 +289,11 @@ No media query for `xs` since this is the default */
 
 @media (max-width: 768px) {
 
+  #arts.wide-left {
+    width: 60%;
+    /* width: 80%; */
+    /* height: 100%; */
+  }
   h1 {
     font-size: 4.6rem;
   }
