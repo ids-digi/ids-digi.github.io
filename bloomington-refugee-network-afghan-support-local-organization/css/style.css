@@ -28,6 +28,10 @@ header {
   transition: filter 0.5s ease, box-shadow 0.5s ease;
 }
 
+.ad-code {
+  text-align: center;
+}
+
 
 
 header.no-filter {
@@ -261,6 +265,22 @@ media queries helper
 /* Extra small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default */
 
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 4.6rem;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+
+  .headline-container {
+    top: 20vh;
+  }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   .side-by-side-by-side {
@@ -278,8 +298,13 @@ No media query for `xs` since this is the default */
     -sm); */
   }
 
+
   .support-btn-container {
     margin-top: 10px;
+  }
+
+  .side-by-side-by-side figure {
+    width: 40vw;
   }
 
   h1 {
@@ -290,13 +315,9 @@ No media query for `xs` since this is the default */
     font-size: 2.4em;
   }
 
-  .side-by-side-by-side figure {
-    width: 40vw;
-  }
 
-  .headline-container {
-    top: 20vh;
-  }
+
+
 }
 
 /* Medium devices (tablets, 768px and up) */

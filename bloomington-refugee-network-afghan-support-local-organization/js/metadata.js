@@ -3,7 +3,7 @@ const data = {
   slug: 'Afghan refugees',
   headline: "'This is not our dream': Afghan refugees seek support from local Bloomington organization",
   title: 'Afghan refugees',
-  pub_date: "March 5, 2025",
+  pub_date: "March 9, 2025",
   bylines: {
     "Story and photos by": {
       name: 'Nicole Blevins',
@@ -20,11 +20,18 @@ const data = {
         bio: 'Sky has worked for the IDS since 2024 as a web developer.',
       },
     ],
+    "Illustrations by": {
+      name: 'Natalie Cartmel',
+      email: 'ncartmel@iu.edu',
+      //   twitter: 'catcharron',
+      // pfp: 'https://s3.amazonaws.com/snwceomedia/ids/59932fa0-a3db-4e0c-8c88-a6f60b2391f8.original.jpg',
+      // bio: 'Nicole has worked for the IDS since 2024 as a breaking news and enterprise reporter.',
+    },
   },
 };
 
 // bylines
-const byline_types = ["Story and photos by", 'Design & Development by', 'Design by'];
+const byline_types = ["Story and photos by", 'Design & Development by', 'Illustrations by'];
 let bylines_html = '';
 let bios_html = '';
 
