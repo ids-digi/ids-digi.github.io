@@ -20,7 +20,7 @@ header {
   background-repeat: no-repeat;
   /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
   background-position: center 60%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('../images/DSC_0117.JPG');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/26b5e93a-4979-4b68-a38d-e4fd0db3ae75.original.jpg');
   position: relative;
   /* overflow: hidden; */
   background-size: cover;
@@ -238,7 +238,7 @@ media queries helper
   height: 100%;
   top: 0;
   left: 0;
-  background: url('../images/syrup.png');
+  background: url('https://s3.amazonaws.com/snwceomedia/ids/354439b7-148c-46a2-a7c0-3b98ef0483fc.original.png');
   background-repeat: repeat-x;
   background-size: 20vw;
   animation: animate 1s linear infinite;
