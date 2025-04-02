@@ -1,24 +1,27 @@
 const data = {
-    "url": "indiana-university-womens-basketball-ncaa-tournament-photos",
-    // slug will appear in the nav bar
-    "slug": "Basketball Photos",
-    "headline": "Photos from the NCAA Tournament",
-    // title will appear on the tab in the browser
-    "title": "Basketball Photos",
-    // make sure to update the pub date before finishing the project
-    "pub_date": "March 27, 2025",
+    "url": "indiana-university-color-run-jill-behrman-legacy",
+    "slug": "Color Run Preview",
+    "headline": "25 years after Jill Behrman's disappearance, her story runs on",
+    "title": "Buildout Template",
+    "pub_date": "April 3, 2025",
     "bylines": {
-        // fill in photographer info
-        "Photos by": [
-            {
-                "name": "Emerson Elledge",
-                "email": "eelledge@iu.edu",
-            },
-        ],
-        // fill in digital designer info
+        "By": {
+            "name": "Tyler Spence",
+            "email": "spencejt@iu.edu",
+            "pfp": "https://s3.amazonaws.com/snwceomedia/ids/15042e52-0b0c-45ef-86f9-97be0b3550cd.original.jpg",
+            "bio": "Tyler Spence is a master's student studying journalism at Indiana University and a Fellow at the Arnolt Center for Investigative Journalism."
+        },
+        // "Photos by": {
+        //     "name": "Izzy Myszak",
+        //     "email": "izzymyszak@iu.edu",
+        //     "twitter": "izzymyszak"
+        // },
         "Design and development by": {
             "name": "Calvin Josenhans",
             "email": "cjosenha@iu.edu",
+            "twitter": "CalvinJosenhans",
+            "pfp": "https://s3.amazonaws.com/snwceomedia/ids/13acda73-a88b-4fb5-bb21-8a4342e8a14c.original.jpg",
+            "bio": "Calvin is a junior studying computer science at Indiana University and managing editor of digital at the IDS."
         }
     }
 }
@@ -78,7 +81,7 @@ function setAuthorBio(type, author) {
 }
 
 document.querySelector('#bylines').innerHTML = bylines_html;
-// document.querySelector('.author-bios').innerHTML = bios_html;
+document.querySelector('.author-bios').innerHTML = bios_html;
 
 // pubdate
 document.querySelector('#pubdate').innerHTML = "Published " + data.pub_date;
