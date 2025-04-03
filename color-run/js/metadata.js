@@ -2,7 +2,7 @@ const data = {
     "url": "indiana-university-color-run-jill-behrman-legacy",
     "slug": "Color Run Preview",
     "headline": "25 years after Jill Behrman's disappearance, her story runs on",
-    "title": "Buildout Template",
+    "title": "Jill Behrman's story runs on",
     "pub_date": "April 3, 2025",
     "bylines": {
         "By": {
