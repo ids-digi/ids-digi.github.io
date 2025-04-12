@@ -3,7 +3,7 @@ const data = {
     "slug": "Transfer portal",
     "headline": "Indiana basketball transfer portal updates",
     "title": "Transfer portal updates",
-    "pub_date": "Feb. 14, 2025",
+    "pub_date": "April 12, 2025",
     "bylines": {
         "By":[ {
             "name": "IDS Staff",
