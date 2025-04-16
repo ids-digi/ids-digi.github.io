@@ -23,6 +23,23 @@ header {
 	background-position: 80% center;
 }
 
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 /* 
   SET ANY MORE STYLES YOU WANT BELOW
   Be sure to delete empty declarations
@@ -154,8 +171,7 @@ No media query for `xs` since this is the default */
 	}
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: 2000px) {
 	.helper {
 		background-color: blue;
 	}
@@ -163,4 +179,50 @@ No media query for `xs` since this is the default */
 	.helper::after {
 		content: 'XL';
 	}
+
+	h1 {
+		font-size: 90px;
+		/* top headline */
+		text-align: left;
+		align-self: flex-start;
+		max-width: 50vw;
+	}
+	
+	h2 {
+		font-size: 60px;
+		/* second headline */
+		text-align: right;
+	
+		align-self: flex-end;
+	}
+
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 2400px) {
+	.helper {
+		background-color: blue;
+	}
+
+	.helper::after {
+		content: 'XL';
+	}
+
+	h1 {
+		font-size: 120px;
+		/* top headline */
+		text-align: left;
+		align-self: flex-start;
+		max-width: 50vw;
+	}
+	
+	h2 {
+		font-size: 90px;
+		/* second headline */
+		text-align: right;
+	
+		align-self: flex-end;
+	}
+
+
 }
