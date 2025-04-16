@@ -49,14 +49,14 @@ header {
 TYPOGRAPHY
 */
 h1 {
-	font-size: 70pt;
+	font-size: 40pt;
 	/* top headline */
 	text-align: left;
 	align-self: flex-start;
 }
 
 h2 {
-	font-size: 45pt;
+	font-size: 30pt;
 	/* second headline */
 	text-align: right;
 
@@ -170,4 +170,31 @@ No media query for `xs` since this is the default */
 		font-size: 30px;
 	}
 }
+
+
+
+@media (min-width: 2000px) {
+	.helper {
+		background-color: blue;
+	}
+
+	.helper::after {
+		content: 'XL';
+	}
+
+	h1 {
+		font-size: 90pt;
+		/* top headline */
+		text-align: left;
+		align-self: flex-start;
+		max-width: 80vw;
+	}
+	
+	h2 {
+		font-size: 60pt;
+		/* second headline */
+		text-align: right;
+	
+		align-self: flex-end;
+	}
 
