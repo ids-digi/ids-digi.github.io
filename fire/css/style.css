@@ -20,7 +20,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	/* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
-	background-position: center center;
+	background-position: 80% center;
 }
 
 /* 
