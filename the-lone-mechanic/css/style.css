@@ -29,6 +29,23 @@ header {
   Be sure to delete empty declarations
 */
 
+.grid-image-1 {
+  grid-area: 1/1/1/8;
+}
+
+.grid-image-2 {
+  grid-area: 1/8/1/13;
+  align-self: end;
+}
+
+.grid-image-3 {
+  grid-area: 2/1/2/6;
+}
+
+.grid-image-4 {
+  grid-area: 2/6/2/13;
+}
+
 /* 
 TYPOGRAPHY
 */
@@ -383,7 +400,7 @@ No media query for `xs` since this is the default */
   }
 
   * {
-    border: 2px solid lime;
+    /* border: 2px solid lime; */
   }
 
   .helper::after {
