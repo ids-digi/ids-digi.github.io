@@ -573,6 +573,7 @@ main {
 		}
 
 		.header-content {
+
 			div.live-updates {
 				h3 {
 					font-size: 22pt;
@@ -641,16 +642,13 @@ main {
 
 			.stories-container {
 				gap: 20px;
+				justify-content: space-around;
 
 				.story {
 					flex-direction: column;
 					align-items: start;
 					margin-top: 20px;
-
-					img {
-						/* width:240px; */
-						/* height:170px; */
-					}
+					max-width: 300px;
 
 					.story-meta {
 						margin: 0;
