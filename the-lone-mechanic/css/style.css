@@ -59,13 +59,6 @@ h1 {
 
 }
 
-h2 {
-  /* second headline */
-
-}
-
-h1 {
-}
 
 h2 {
   /* alignment */
@@ -93,10 +86,6 @@ div.models {
   text-align: left;
 }
 
-.dropcap:first-letter {
-  /* change the font/style of the dropcap if you wish to use them */
-
-}
 
 /* 
 media queries helper
@@ -186,11 +175,6 @@ audio {
   height: 600px;
 }
 
-.md-image {
-  text-align: center;
-  width: 50%;
-  height: auto 
-}
 
 
 .numbers-container {
@@ -269,18 +253,6 @@ div.numbers div.text {
   grid-template-columns: 1fr 1fr;
 }
 
-.middle {
-  /* position: absolute; */
-  /* top: 40%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
-  /* text-align: center; */
-  /* color: white; */
-  /* font-size: 18px; */
-  /* opacity: 0; */
-  /* transition: opacity 0.5s ease; */
-  /* width: 100%; */
-}
 
 
 #train{
@@ -314,22 +286,6 @@ ul {
   position: relative;
   margin: auto;
   align-items: center;
-}
-
-.lg-image {
-  display: grid;
-  place-items: center;      
-  text-align: center;       
-}
-
-.lg-image img {
-  max-width: 60%;         
-  height: auto;             
-}
-
-.lg-image figcaption {
-  width: 60%;               
-  margin-top: 10px;          
 }
 
 
@@ -399,9 +355,6 @@ No media query for `xs` since this is the default */
     background-color: orange;
   }
 
-  * {
-    /* border: 2px solid lime; */
-  }
 
   .helper::after {
     content: 'S';

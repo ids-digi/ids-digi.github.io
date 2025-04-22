@@ -8,20 +8,22 @@ const data = {
         "By": {
             "name": "Tory Basile",
             "email": "vlbasile@iu.edu",
-            "twitter": "catcharron",
-            "pfp": "https://pbs.twimg.com/profile_images/1499562155896619014/CUD2EvuV_400x400.jpg",
-            "bio": "Tory joined the IDS in 2021 is currently a managing edtior."
+            "twitter": "torybasilee",
+            "pfp": "https://www.indystar.com/gcdn/presto/2023/06/14/PIND/57c6c6cf-0c3c-40e1-bcd0-b6a317bd9eef-061423_ToryBasileMUG_MSG_0007.jpg?crop=2612,2612,x0,y171&width=200&height=200&format=pjpg&auto=webp",
+            "bio": "Tory has worked at the IDS since 2021 and is currently a managing editor."
         },
         "Photos by": {
             "name": "Grace Urbanski",
             "email": "gurbask@iu.edu",
-            "twitter": "izzymyszak"
+            "pfp": "https://data.mediaschool.indiana.edu/people/wp-content/uploads/sites/4/2024/09/Grace-Urbanski-2024.jpg",
+            "bio": "Grace is a sophomore in the Media school studying sports media."
+            // "twitter": "izzymyszak"
         },
         "Design and development by": {
             "name": "Alex Kurz",
             "email": "amkurz@iu.edu",
             "twitter": "alexkurz21",
-            "pfp": "https://pbs.twimg.com/profile_images/1477852735278129152/vk-AiTE6_400x400.jpg",
+            "pfp": "https://media.licdn.com/dms/image/v2/C4D03AQEnLqhy07nPeA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1626219210838?e=1750896000&v=beta&t=mM7IMBPlP1AJKQ-WF3Dx3Eocm2mhIm4hHZMyUCNMWRc",
             "bio": "Alex is a senior in the Media School studying journalism."
         },
         // "Graphics by": {
