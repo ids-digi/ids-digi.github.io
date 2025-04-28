@@ -1,7 +1,7 @@
 const data = {
     "url": "survivor-at-iu",
     "slug": "IU Survivor",
-    "headline": "    IU Survivor: Campus club brings hit reality TV show to Bloomington ",
+    "headline": "IU Survivor: Campus club brings hit reality TV show to Bloomington ",
     "title": "IU Survivor",
     "pub_date": "April 28, 2025",
     "bylines": {
