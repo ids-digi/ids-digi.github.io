@@ -16,11 +16,11 @@
 header {
   /* add header image below */
   /* can use a file path before the photo is uploaded to ceo */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/2117955e-1b4c-4014-8535-e35429063a48.sized-1000x1000.JPG');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/e1b383f3-a52f-4c82-808d-a29061730fe4.original.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
-  background-position: center center;
+  background-position: center 20%;
 }
 
 /* 
@@ -44,17 +44,20 @@ h2 {
 h1,
 h2 {
   /* alignment */
-  text-align: center;
+  text-align: left;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
   /* width of text */
-  max-width: var(--width-lg);
+  max-width: var(--width-md);
   /* text color */
   color: white;
-  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 0 15px rgba(0, 0, 0, 1);
 }
 
 .headline-container {
-  /* top: auto;
-  bottom: 15vh; */
+  left: 0;
+  top: auto;
+  bottom: 0;
 }
 
 h3 {
@@ -91,6 +94,21 @@ media queries helper
   font-family: Lato, sans-serif;
   font-weight: bold;
   font-size: 25px;
+}
+
+
+@media (max-width: 992px) {
+  h1,
+h2 {
+  /* alignment */
+  text-align: left;
+  margin-left: 2rem;
+  /* width of text */
+  max-width: var(--width-md);
+  /* text color */
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
 }
 
 /* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */

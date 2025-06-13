@@ -1,26 +1,34 @@
 const data = {
-    "url": "indiana-basketball-transfer-portal-updates-bloomington",
-    "slug": "Transfer portal",
-    "headline": "Indiana basketball transfer portal updates",
-    "title": "Transfer portal updates",
-    "pub_date": "April 12, 2025",
+    "url": "your-url-here",
+    "slug": "The King&rsquo;s Wife Q&A",
+    "headline": "Q&A with Mêlisa Annis, bookwriter of new musical &lsquo;The King&rsquo;s Wife&rsquo;",
+    "title": "The King&rsquo;s Wife Q&A",
+    "pub_date": "June 13, 2025",
     "bylines": {
-        "By":[ {
-            "name": "IDS Staff",
-            // "email": "danflick@iu.edu",
-            // "twitter": "ByDanielFlick",
+        "By": {
+            name: 'Sydney Weber',
+            email: 'syaweber@iu.edu',
+            //   twitter: 'catcharron',
+            pfp: 'https://s3.amazonaws.com/snwceomedia/ids/9952b80a-d644-4f12-b68c-b323de8be927.original.jpg',
+            bio: 'Sydney has worked at the IDS since 2024 as a writer.',
         },
-        // {
-        //     "name": "Quinn Richards",
-        //     "email": "qmrichar@iu.edu",
-        //     "twitter": "Quinn_richa",
-        // }
-    ],
+        // "Photos by": {
+        //     "name": "Izzy Myszak",
+        //     "email": "izzymyszak@iu.edu",
+        //     "twitter": "izzymyszak"
+        // },
         "Design and development by": {
             "name": "Calvin Josenhans",
             "email": "cjosenha@iu.edu",
             "twitter": "CalvinJosenhans",
+            "pfp": "https://s3.amazonaws.com/snwceomedia/ids/13acda73-a88b-4fb5-bb21-8a4342e8a14c.original.jpg",
+            "bio": "Calvin has worked at the IDS since 2024 on the digital desk."
         },
+        // "Graphics by": {
+        //     "name": "Vivek Rao",
+        //     "email": "vivrao@iu.edu",
+        //     "twitter": "vivrao"
+        // }
     }
 }
 
@@ -79,7 +87,7 @@ function setAuthorBio(type, author) {
 }
 
 document.querySelector('#bylines').innerHTML = bylines_html;
-// document.querySelector('.author-bios').innerHTML = bios_html;
+document.querySelector('.author-bios').innerHTML = bios_html;
 
 // pubdate
 document.querySelector('#pubdate').innerHTML = "Published " + data.pub_date;
