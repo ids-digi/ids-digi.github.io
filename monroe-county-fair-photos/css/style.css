@@ -178,3 +178,15 @@ footer .copyright {
 .step p {
   color: white;
 }
+
+
+@media screen and (min-width: 1000px) {
+  .sticky-image { background-color: black;}
+
+  .sticky-image figure {
+    background-color: black;}
+  .sticky-image figure img {
+    object-fit: contain;
+    object-position: center center !important;
+  }
+}

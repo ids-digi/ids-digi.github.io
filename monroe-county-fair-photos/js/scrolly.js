@@ -48,6 +48,9 @@ function handleStepEnter(event) {
         document.querySelector('.sticky-image').style.pointerEvents = "none";
     } else {
         images[index].style.opacity = 1;
+        if (index != 0) {
+            images[index-1].style.opacity = 0;
+        }
     }
 
 }
@@ -63,6 +66,10 @@ function handleStepExit(event) {
             document.querySelector('.sticky-image').style.pointerEvents = "initial";
         } else {
             images[index].style.opacity = 0;
+
+            if (index != 0) {
+                images[index-1].style.opacity = 1;
+            }
         }
     }
 }
